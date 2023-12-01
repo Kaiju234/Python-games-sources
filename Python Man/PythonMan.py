@@ -158,8 +158,8 @@ while True:
              ghoulMovement()
     
 # Pyman and Ghouls
-for ghoul in ghouls:
-    if pyman.distance(ghoul) < 10:
+    for ghoul in ghouls:
+        if pyman.distance(ghoul) < 10:
         lives -= 1
         pen.clear()
         pen.write('Score: {} Lives {}'.format(score, lives), align='center', font=('Courier', 36))
