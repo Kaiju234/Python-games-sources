@@ -160,11 +160,12 @@ while True:
 # Pyman and Ghouls
     for ghoul in ghouls:
         if pyman.distance(ghoul) < 10:
-        lives -= 1
-        pen.clear()
-        pen.write('Score: {} Lives {}'.format(score, lives), align='center', font=('Courier', 36))
-        time.sleep(1)
-        pyman.goto(0,0)
-   
+            lives -= 1
+            pen.clear()
+            pen.write('Score: {} Lives {}'.format(score, lives), align='center', font=('Courier', 36))
+            time.sleep(1)
+            pyman.goto(0,0)
+            
+    
     movement()
     ghoulMovement()
